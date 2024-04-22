@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", function () {
     { name: "AD Class 4", video: "ad4.mp4" },
     { name: "Akshara / Mudra / Mantra Hall", video: "mfm.mp4" },
     { name: "BFT Class 2", video: "bft2.mp4" },
-    { name: "DFT Computer Lab 6,7", video: "cl67.mp4" },
+    { name: "DFT Computer Lab 5,6,7", video: "cl67.mp4" },
     { name: "DFT PM Lab", video: "dftpm.mp4" },
     { name: "FC Computer Lab / Mac Lab", video: "fclab.mp4" },
     { name: "FC VM Lab", video: "fc.mp4" },
