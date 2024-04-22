@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script>
+      if (!/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
+        document.documentElement.style.display = "none"; // Hide everything immediately
+        document.addEventListener("DOMContentLoaded", function () {
+          document.body.innerHTML =
+            "<h1>Access Restricted</h1><p>This content is only available on mobile devices.</p>";
+          document.documentElement.style.display = "block"; // Show alternative content
+        });
+      }
+    </script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>College Tour</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <a href="index.html" class="logo">
+        <img src="logo.jpg" alt="College Logo" />
+      </a>
+      <div class="hamburger-menu">
+        <div class="menu-icon">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-items" style="display: none">
+          <ul>
+           
+            <li><a href="about.html">About Us</a></li>
+        
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="main">
+      <div id="main-container">
+        <img id="location-image" src="oldfoyer.png" alt="Front Gate" />
+        <video id="room-video" style="display: none; width: 100%" controls></video>
+        <select id="room-selector">
+          <option value="">Select a Room</option>
+        </select>
+      </div>
+    </div>
+    <!-- Custom modal for alert message -->
+    <div id="customModal" class="modal" style="display: none;">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <p id="modalText">Some text in the Modal..</p>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
